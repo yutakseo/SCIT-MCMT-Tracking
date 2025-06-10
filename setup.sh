@@ -1,11 +1,8 @@
-# Step1. Install ByteTrack.
-pip3 install -r requirements.txt
-python3 setup.py develop
-
-# Step2. Install pycocotools.
-pip3 install cython; pip3 install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
-
-# Step3. Others
-pip3 install cython_bbox
-pip3 install mmcv-full==1.7.1
-pip3 install -v -e .
+#!/bin/bash
+pip install -r requirements.txt
+python setup.py develop
+pip install cython
+pip install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+pip install cython_bbox
+pip install mmcv-full==1.7.1 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html
+pip install -v -e .
