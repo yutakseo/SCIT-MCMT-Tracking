@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  scit-mcmt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: /bin/bash 
