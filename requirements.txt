@@ -1,6 +1,7 @@
 # TODO: Update with exact module version
 numpy>=1.19.2
 opencv-python>=4.5.3
+libgl1
 loguru
 scikit_image
 tqdm>=4.62.3
