@@ -19,7 +19,7 @@ We run on 2 NVIDIA A6000 GPUs.
 - mmcv-full==1.7.1 ([MMCV](https://mmcv.readthedocs.io/en/latest/#installation))
 
 ## Installation
-
+### Conda installation
 - Step #1. Create environment (recommend environment)
 ```bash 
 conda env create --file environment.yaml
