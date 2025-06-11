@@ -3,7 +3,7 @@ version: '3.8'
 services:
   scit-mcmt:
     build:
-      context: .
+      context: 
       dockerfile: Dockerfile
     runtime: nvidia
     environment:
@@ -11,4 +11,4 @@ services:
     volumes:
       - .:/workspace
     working_dir: /workspace
-    command: /bin/bash
+    command: bash -c "source ~/.bashrc && exec bash"
