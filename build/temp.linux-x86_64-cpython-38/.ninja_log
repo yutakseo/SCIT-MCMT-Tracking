@@ -1,0 +1,5 @@
+# ninja log v5
+0	9483	1682043094630569914	/data/cvprw/final/SCIT-MCMT-Tracking/build/temp.linux-x86_64-cpython-38/data/cvprw/final/SCIT-MCMT-Tracking/yolox/layers/csrc/cocoeval/cocoeval.o	4d9566258349451d
+1	9699	1682043094842572086	/data/cvprw/final/SCIT-MCMT-Tracking/build/temp.linux-x86_64-cpython-38/data/cvprw/final/SCIT-MCMT-Tracking/yolox/layers/csrc/vision.o	501d96d85dee9372
+1	3282	1749613757979994506	/workspace/build/temp.linux-x86_64-cpython-38/workspace/yolox/layers/csrc/cocoeval/cocoeval.o	ac043c6fc1d30661
+1	3940	1749613758636000500	/workspace/build/temp.linux-x86_64-cpython-38/workspace/yolox/layers/csrc/vision.o	85aa227bd460de7f

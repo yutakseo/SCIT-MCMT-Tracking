@@ -1,0 +1,21 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -pthread -B /opt/conda/envs/scit/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/workspace/yolox/layers/csrc -I/opt/conda/envs/scit/lib/python3.8/site-packages/torch/include -I/opt/conda/envs/scit/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/opt/conda/envs/scit/lib/python3.8/site-packages/torch/include/TH -I/opt/conda/envs/scit/lib/python3.8/site-packages/torch/include/THC -I/opt/conda/envs/scit/include/python3.8 -c
+post_cflags = -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+build /workspace/build/temp.linux-x86_64-cpython-38/workspace/yolox/layers/csrc/cocoeval/cocoeval.o: compile /workspace/yolox/layers/csrc/cocoeval/cocoeval.cpp
+build /workspace/build/temp.linux-x86_64-cpython-38/workspace/yolox/layers/csrc/vision.o: compile /workspace/yolox/layers/csrc/vision.cpp
+
+
+
+
+
