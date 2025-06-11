@@ -34,14 +34,14 @@ or
 
 ### Docker installation
 - Step #1. Build container (recommend environment)
-'''bash
+```bash
 docker-compose up --build -d
-'''
+```
 
 - Step #2. Setup Pre-trained models
-'''bash
+```bash
 sh setup.sh
-'''
+```
 
 
 ## Train
