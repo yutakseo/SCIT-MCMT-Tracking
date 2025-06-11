@@ -21,17 +21,24 @@ We run on 2 NVIDIA A6000 GPUs.
 ## Installation
 
 - Step #1. Create environment (recommend environment)
-
 ```bash 
 conda env create --file environment.yaml
 conda activate scit
 ```
 
 - Step #2. Install packages
-
 ```bash 
 sh setup.sh
 ```
+or 
+
+- Docker installation
+'''
+docker-compose up --build -d
+
+sh setup.sh
+'''
+
 
 ## Train
 
