@@ -19,7 +19,7 @@ We run on 2 NVIDIA A6000 GPUs.
 - mmcv-full==1.7.1 ([MMCV](https://mmcv.readthedocs.io/en/latest/#installation))
 
 ## Installation
-
+### Conda installation
 - Step #1. Create environment (recommend environment)
 ```bash 
 conda env create --file environment.yaml
@@ -32,12 +32,21 @@ sh setup.sh
 ```
 or 
 
-- Docker installation
-'''
+### Docker installation
+- Step #1. Build and run the container in your local environment
+```bash
 docker-compose up --build -d
+```
 
+- Step #2. Access the running container
+```bash
+docker exec -it scit-mcmt-container bash
+```
+
+- Step #3. Set up pre-trained models inside the running container
+```bash
 sh setup.sh
-'''
+```
 
 
 ## Train
