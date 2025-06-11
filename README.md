@@ -32,10 +32,14 @@ sh setup.sh
 ```
 or 
 
-- Docker installation
-'''
+### Docker installation
+- Step #1. Build container (recommend environment)
+'''bash
 docker-compose up --build -d
+'''
 
+- Step #2. Setup Pre-trained models
+'''bash
 sh setup.sh
 '''
 
