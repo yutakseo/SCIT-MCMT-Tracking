@@ -1,14 +1,16 @@
-version: '3.8'
+version: "3.8"
 
 services:
   scit-mcmt:
+    container_name: scit-mcmt
     build:
-      context: 
+      context: .
       dockerfile: Dockerfile
     runtime: nvidia
     environment:
-      - NVIDIA_VISIBLE_DEVICES=all
+      NVIDIA_VISIBLE_DEVICES: all
     volumes:
       - .:/workspace
     working_dir: /workspace
-    command: bash -c "source ~/.bashrc && exec bash"
+    command: >
+      bash -c "source ~/.bashrc && tail -f /dev/null"
