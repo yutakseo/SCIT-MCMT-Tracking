@@ -33,12 +33,17 @@ sh setup.sh
 or 
 
 ### Docker installation
-- Step #1. Build container (recommend environment)
+- Step #1. Build and run the container in your local environment
 ```bash
 docker-compose up --build -d
 ```
 
-- Step #2. Setup Pre-trained models
+- Step #2. Access the running container
+```bash
+docker exec -it scit-mcmt-container bash
+```
+
+- Step #3. Set up pre-trained models inside the running container
 ```bash
 sh setup.sh
 ```
