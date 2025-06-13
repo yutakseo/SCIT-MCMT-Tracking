@@ -7,3 +7,4 @@ python3 tools/multicam_track.py video \
 ../experiments/yolox/epoch_250.pth \
 --tp_weight ../tp/tp_best.pth \
 --save_result ./test-site022 --save_vid True --track_buffer 150 
+
